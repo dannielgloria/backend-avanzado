@@ -3,6 +3,7 @@ import express from 'express';
 
 import connectDB from "./src/config/db.js";
 import healtcheckRoutes from "./src/routes/healtcheckRoutes.js"
+import userRoutes from "./src/routes/userRoutes.js"
 
 dotenv.config();
 
@@ -13,7 +14,9 @@ const app = express()
 //Routes
 
 //app.use('/api/v0/users', )
+app.use(express.json());
 app.use('/api/v0/', healtcheckRoutes)
+app.use('/api/v0/users', userRoutes)
 
 
 const PORT = 5010;
