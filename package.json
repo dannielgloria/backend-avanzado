@@ -4,8 +4,8 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "dev" : "nodemon app.js",
-    "staging" : "node app.js",
+    "dev": "nodemon app.js",
+    "staging": "node app.js",
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,8 +14,10 @@
   "license": "ISC",
   "description": "Repositorio de Modulo BackEnd Avanzado, nuestro primer backend con NoSQL (MongoDB)",
   "dependencies": {
+    "bcryptjs": "^3.0.2",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.13.0"
   },
   "devDependencies": {
