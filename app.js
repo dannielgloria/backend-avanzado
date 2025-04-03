@@ -1,10 +1,9 @@
-import dotenv from "dotenv";
 import express from 'express';
-
 import connectDB from "./src/config/db.js";
 import healtcheckRoutes from "./src/routes/healtcheckRoutes.js"
 import userRoutes from "./src/routes/userRoutes.js"
 import authRoutes from "./src/routes/authRoutes.js"
+import { errors } from "celebrate";
 
 connectDB();
 
@@ -18,6 +17,7 @@ app.use('/api/v0/', healtcheckRoutes)
 app.use('/api/v0/users', userRoutes)
 app.use('/api/v0/auth', authRoutes)
 
+app.use(errors());
 
 const PORT = 5010;
 app.listen(PORT, () => {
