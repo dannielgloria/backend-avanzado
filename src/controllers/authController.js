@@ -1,10 +1,11 @@
 import User from "../models/User.js";
+import { jwtSecret } from "../config/constants.js"
 import jwt from "jsonwebtoken";
 import bcrypt from 'bcryptjs';
 
 
 const generateToken = (id) => {
-    return jwt.sign({id}, "u6ro86beo86re", { expiresIn: '30d'})
+    return jwt.sign({id}, jwtSecret, { expiresIn: '30d'})
 }
 
 export const registerUser = async (req, res) => {
