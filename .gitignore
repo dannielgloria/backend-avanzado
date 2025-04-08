@@ -134,4 +134,4 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
-./backend-avanzado-cac5a-firebase-adminsdk-fbsvc-5cf2653750.json
+.backend-avanzado-cac5a-firebase-adminsdk-fbsvc-5cf2653750.json
