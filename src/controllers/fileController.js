@@ -5,10 +5,10 @@ export const uploadFileFirebase = async (req, res) => {
         return res.status(400).json({ message: 'No file uploaded'});
     }
 
-    const fileName = Date.now()+'-'+req.origialname;
+    const fileName = Date.now()+'-'+req.file.origialname;
     const file = bucket.file(fileName)
 
-    const stream = file.createWriteSream({
+    const stream = file.createWriteStream({
         metadata: { contentType: req.file.mimetype }
     });
     
