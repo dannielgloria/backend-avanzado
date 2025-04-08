@@ -26,3 +26,6 @@ const PORT = 5010;
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en el puerto ${PORT}`)
 })
+
+
+export default app; // Exporta para pruebas
