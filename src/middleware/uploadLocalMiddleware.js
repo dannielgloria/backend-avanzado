@@ -3,7 +3,7 @@ import path from 'path';
 import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirmane(__filename)
+const __dirname = path.dirname(__filename)
 
 // Definimos almacenamiento local
 const storage = multer.diskStorage({
@@ -17,7 +17,7 @@ const storage = multer.diskStorage({
     },
 });
 
-const upload = multer({
+const uploadLocal = multer({
     storage,
     limits: {
         fieldSize: 5 * 1024 * 1024, // 5 MB como límite de subida
@@ -34,4 +34,4 @@ const upload = multer({
     }
 });
 
-export default upload;
+export default uploadLocal;

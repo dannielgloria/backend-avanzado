@@ -36,6 +36,8 @@ export const uploadLocalFile = async (req, res) => {
         return res.status(400).json({ message: 'No file uploaded'});
     }
 
+    console.log(req)
+
     res.status(201).json({
             message: 'Archivo subido con éxito.',
             filename: req.file.fileName,
