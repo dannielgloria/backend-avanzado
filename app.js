@@ -28,4 +28,4 @@ app.listen(PORT, () => {
 })
 
 
-export default app; // Exporta para pruebas
+export default app; 
