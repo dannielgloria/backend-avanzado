@@ -1,6 +1,6 @@
 import express from 'express'
 import upload from '../middleware/uploadFirebaseMiddleware.js';
-import uploadLocal from '../middleware/uploadLocalMiddleware.js';
+import uploadLocal from '../middleware/uploadLocalMiddleware.mjs';
 import { uploadFileFirebase, uploadLocalFile } from '../controllers/fileController.js';
 import { protect } from '../middleware/authMiddleware.js'
 
