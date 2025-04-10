@@ -1,4 +1,4 @@
-import path from "path";
+/*import path from "path";
 import { bucket } from "../config/firebase.js";
 
 export const uploadFileFirebase = async (req, res) => {
@@ -41,4 +41,4 @@ export const uploadLocalFile = async (req, res) => {
             filename: req.file.filename,
             path: req.file.path,
         })
-}
+}*/

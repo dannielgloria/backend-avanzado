@@ -1,9 +1,9 @@
-import multer from "multer";
+/* import multer from "multer";
 import path from 'path';
 import { fileURLToPath } from "url";
 
-const __nombrearchivo = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__nombrearchivo)
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 // Definimos almacenamiento local
 const storage = multer.diskStorage({
@@ -34,4 +34,4 @@ const uploadLocal = multer({
     }
 });
 
-export default uploadLocal;
+export default uploadLocal; */
